@@ -52,7 +52,7 @@ group by vine;
 -- The average number of total votes is very similar between non-Vine
 -- and Vine reviews (6.27 vs 6.25) when they exist.
 -- When 0 votes are included, average number of total votes drop
--- (3.15 vs 3.72) but are still vert similar to each other.
+-- (3.15 vs 3.72) but are still very similar to each other.
 select vine, avg(total_votes)::float as avg_total_votes from 
 (
 	select *

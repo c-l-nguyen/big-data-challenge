@@ -44,7 +44,7 @@ select vine, sum(helpful_votes)/sum(total_votes)::float as helpful_percent from 
 group by vine;
 
 -- Slightly more average total votes for non-Vine reviews than Vine
--- (6.4 vs. 5.5), but not significant difference when votes exist.
+-- (6.4 vs. 5.5), but not a significant difference when votes exist.
 -- When 0 votes are included, Vine reviews have more votes (2.7 vs 3.3) 
 -- so it seems that Vine reviews get voted on more frequently
 select vine, avg(total_votes)::float as avg_total_votes from 
